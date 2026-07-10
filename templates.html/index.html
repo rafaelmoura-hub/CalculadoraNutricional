@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Nutricional</title>
+
+    <style>
+        body{
+            background:#1e1e1e;
+            color:white;
+            font-family:Arial;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .box{
+            background:#2b2b2b;
+            padding:30px;
+            border-radius:15px;
+            width:350px;
+            text-align:center;
+        }
+
+        input, select{
+            width:90%;
+            padding:10px;
+            margin:10px;
+            border-radius:8px;
+            border:none;
+        }
+
+        button{
+            padding:12px 20px;
+            background:#00b894;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#019875;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Calculadora Nutricional</h1>
+
+<form action="/calcular" method="POST">
+
+<input
+type="number"
+name="peso"
+placeholder="Digite seu peso (kg)"
+step="0.1"
+required>
+
+<select name="objetivo">
+
+<option value="ganho">Ganho de Massa</option>
+
+<option value="perda">Perda de Massa</option>
+
+</select>
+
+<br>
+
+<button type="submit">
+Calcular
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Resultado</title>
+
+<style>
+
+body{
+
+background:#1e1e1e;
+color:white;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+
+}
+
+.box{
+
+background:#2b2b2b;
+padding:30px;
+border-radius:15px;
+text-align:center;
+
+}
+
+a{
+
+text-decoration:none;
+background:#00b894;
+padding:10px 20px;
+color:white;
+border-radius:8px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Resultado</h1>
+
+<p><strong>Peso:</strong> {{peso}} kg</p>
+
+<p><strong>Objetivo:</strong>
+
+{% if objetivo == "ganho" %}
+Ganho de Massa
+{% else %}
+Perda de Massa
+{% endif %}
+
+</p>
+
+<h2>Consumo Diário</h2>
+
+<p>🥩 Proteínas: <strong>{{proteina}} g</strong></p>
+
+<p>🍚 Carboidratos: <strong>{{carboidrato}} g</strong></p>
+
+<br>
+
+<a href="/">Voltar</a>
+
+</div>
+
+</body>
+
+</html>
